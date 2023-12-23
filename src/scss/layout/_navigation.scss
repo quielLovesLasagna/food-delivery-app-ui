@@ -1,0 +1,23 @@
+@use "../abstracts" as abs;
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2.6121rem 4rem 2.8121rem 7rem;
+
+	&__links {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		gap: 9.4rem;
+		font-size: 1.6rem;
+	}
+
+	&__link:link,
+	&__link:visited {
+		text-decoration: none;
+		color: abs.$very-dark-blue;
+		font-weight: abs.$semi-large;
+	}
+}
