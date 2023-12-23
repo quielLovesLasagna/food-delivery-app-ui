@@ -1,0 +1,15 @@
+@use "../abstracts/" as abs;
+
+.header {
+	height: 61.9rem;
+	text-align: center;
+	background: url(../../images/hero-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: 50%;
+	background-attachment: fixed;
+
+	&__content {
+		padding-top: 7.3rem;
+	}
+}

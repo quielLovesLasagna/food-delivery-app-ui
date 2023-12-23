@@ -1,0 +1,22 @@
+@use "variables" as var;
+
+@mixin transition {
+	transition: all 0.2s;
+}
+
+@mixin btnBoxShadow-1 {
+	box-shadow: 0 1rem 3rem rgba(var.$cl-brown, 0.5);
+}
+
+@mixin btnBoxShadow-2 {
+	box-shadow: 0 1rem 3rem rgba(var.$cl-white-1, 0.5);
+}
+
+@mixin textStyle($col, $ff, $fs, $fw, $lh, $ls) {
+	color: $col;
+	font-family: $ff;
+	font-size: $fs;
+	font-weight: $fw;
+	line-height: $lh;
+	letter-spacing: $ls;
+}

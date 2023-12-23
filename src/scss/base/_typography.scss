@@ -3,5 +3,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
 
 body {
-	font-family: abs.$mont;
+	font-family: abs.$ff-mont;
+}
+
+.heading {
+	&__primary--main {
+		display: block;
+		margin: 1.7rem auto;
+		max-width: 93rem;
+		@include abs.textStyle(
+			abs.$cl-white-1,
+			abs.$ff-poppins,
+			abs.$fs-extra-large,
+			abs.$fw-large,
+			8rem,
+			0.2px
+		);
+	}
+
+	&__primary--sub {
+		display: block;
+		@include abs.textStyle(
+			abs.$cl-white-2,
+			abs.$ff-mont,
+			abs.$fs-medium,
+			abs.$fw-large,
+			3.6rem,
+			0.1px
+		);
+	}
+
+	&__secondary {
+		margin-bottom: 4.8rem;
+		@include abs.textStyle(
+			abs.$cl-white-2,
+			abs.$ff-mont,
+			abs.$fs-medium,
+			abs.$fw-medium,
+			3.8rem,
+			0.2px
+		);
+	}
 }

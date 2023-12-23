@@ -6,18 +6,29 @@
 	justify-content: space-between;
 	padding: 2.6121rem 4rem 2.8121rem 7rem;
 
+	&__logo {
+		width: 20.6rem;
+		height: 10.1758rem;
+	}
+
 	&__links {
 		list-style: none;
 		display: flex;
 		align-items: center;
 		gap: 9.4rem;
-		font-size: 1.6rem;
+		font-size: abs.$fs-semi-small;
 	}
 
 	&__link:link,
 	&__link:visited {
 		text-decoration: none;
-		color: abs.$very-dark-blue;
-		font-weight: abs.$semi-large;
+		color: abs.$cl-very-dark-blue;
+		font-weight: abs.$fw-semi-large;
+		@include abs.transition;
+	}
+
+	&__link:hover,
+	&__link:active {
+		color: abs.$cl-orange;
 	}
 }

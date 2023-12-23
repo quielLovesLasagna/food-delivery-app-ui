@@ -1,13 +1,25 @@
 // FONT-FAMILY
-$mont: "Montserrat", sans-serif;
-$poppins: "Poppins", sans-serif;
-$roboto: "Roboto", sans-serif;
+$ff-mont: "Montserrat", sans-serif;
+$ff-poppins: "Poppins", sans-serif;
+$ff-roboto: "Roboto", sans-serif;
 
 // FONT-WEIGHTS
-$small: 400;
-$medium: 500;
-$semi-large: 600;
-$large: 700;
+$fw-small: 400;
+$fw-medium: 500;
+$fw-semi-large: 600;
+$fw-large: 700;
+
+// FONT-SIZE
+$fs-small: 1.2rem;
+$fs-semi-small: 1.6rem;
+$fs-medium: 2.4rem;
+$fs-large: 4rem;
+$fs-semi-large: 4.4rem;
+$fs-extra-large: 5.8rem;
 
 // COLOR
-$very-dark-blue: #252b42;
+$cl-very-dark-blue: #252b42;
+$cl-orange: #fa4a0c;
+$cl-white-1: #fff;
+$cl-white-2: #f6f6f6;
+$cl-brown: rgb(183, 50, 39);

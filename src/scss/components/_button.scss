@@ -1,0 +1,56 @@
+@use "../abstracts" as abs;
+
+.header {
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 3.4rem;
+	}
+
+	&__button-1 {
+		cursor: pointer;
+		border: none;
+		width: 23.6rem;
+		padding: 1.6rem 0;
+		border-radius: 3rem;
+		background-color: abs.$cl-orange;
+		@include abs.textStyle(
+			abs.$cl-white-1,
+			abs.$ff-mont,
+			abs.$fs-medium,
+			abs.$fw-large,
+			3.6rem,
+			0.1px
+		);
+
+		@include abs.transition;
+
+		&:hover {
+			@include abs.btnBoxShadow-1;
+		}
+	}
+
+	&__button-2 {
+		cursor: pointer;
+		background-color: transparent;
+		border: 1px solid abs.$cl-white-1;
+		width: 23.6rem;
+		padding: 1.6rem 0;
+		border-radius: 3rem;
+		@include abs.textStyle(
+			abs.$cl-white-1,
+			abs.$ff-mont,
+			abs.$fs-medium,
+			abs.$fw-large,
+			3.6rem,
+			0.1px
+		);
+
+		@include abs.transition;
+
+		&:hover {
+			@include abs.btnBoxShadow-2;
+		}
+	}
+}
