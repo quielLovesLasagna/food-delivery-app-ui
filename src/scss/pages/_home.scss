@@ -1,0 +1,33 @@
+@use "../abstracts" as abs;
+
+// THE HORIZONTAL RULE BEFORE THE SECTION-HOW
+.horizontal-rule {
+	border: 1px solid abs.$cl-white-3;
+	margin: 59rem auto 7.2rem;
+	height: 1px;
+	width: 60vw;
+}
+
+// SECTION-HOW
+.how {
+	text-align: center;
+
+	&__instruction {
+		margin-top: 10rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+
+		&-preview {
+			@include abs.dropShadowFilter;
+		}
+
+		&-text-container {
+			text-align: left;
+			max-width: 56.1rem;
+			display: flex;
+			flex-direction: column;
+			gap: 1.8rem;
+		}
+	}
+}

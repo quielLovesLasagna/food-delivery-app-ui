@@ -6,6 +6,7 @@ body {
 	font-family: abs.$ff-mont;
 }
 
+// FOR HEADER
 .heading {
 	&__primary--main {
 		display: block;
@@ -44,4 +45,51 @@ body {
 			0.2px
 		);
 	}
+}
+
+// FOR SECTION-HOW
+.heading__secondary--how {
+	text-align: center;
+
+	@include abs.textStyle(
+		abs.$cl-black,
+		abs.$ff-poppins,
+		abs.$fs-semi-large,
+		abs.$fw-semi-large,
+		3.6rem,
+		0.1px
+	);
+}
+
+.heading__tertiary--how {
+	@include abs.textStyle(
+		abs.$cl-orange,
+		abs.$ff-mont,
+		abs.$fs-medium,
+		abs.$fw-large,
+		3.6rem,
+		0.1px
+	);
+}
+
+.heading__quaternary--how {
+	@include abs.textStyle(
+		abs.$cl-very-dark-blue,
+		abs.$ff-mont,
+		abs.$fs-large,
+		abs.$fw-large,
+		5.7rem,
+		0.2px
+	);
+}
+
+.paragraph--how {
+	@include abs.textStyle(
+		abs.$cl-grey-1,
+		abs.$ff-mont,
+		abs.$fs-medium,
+		abs.$fw-medium,
+		3.8rem,
+		0.2px
+	);
 }

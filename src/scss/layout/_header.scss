@@ -12,4 +12,8 @@
 	&__content {
 		padding-top: 7.3rem;
 	}
+
+	&__phone {
+		@include abs.dropShadowFilter;
+	}
 }

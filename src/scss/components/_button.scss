@@ -15,6 +15,7 @@
 		padding: 1.6rem 0;
 		border-radius: 3rem;
 		background-color: abs.$cl-orange;
+
 		@include abs.textStyle(
 			abs.$cl-white-1,
 			abs.$ff-mont,
@@ -38,6 +39,7 @@
 		width: 23.6rem;
 		padding: 1.6rem 0;
 		border-radius: 3rem;
+
 		@include abs.textStyle(
 			abs.$cl-white-1,
 			abs.$ff-mont,
