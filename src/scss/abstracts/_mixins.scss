@@ -12,9 +12,14 @@
 	box-shadow: 0 1rem 3rem rgba(var.$cl-white-1, 0.5);
 }
 
-@mixin dropShadowFilter {
+@mixin dropShadowFilter-1 {
 	-webkit-filter: drop-shadow(5rem 3rem 15rem rgba(46, 4, 4, 0.21));
 	filter: drop-shadow(5rem 3rem 15rem rgba(46, 4, 4, 0.21));
+}
+
+@mixin dropShadowFilter-2 {
+	-webkit-filter: drop-shadow(4px 4px 8px rgba(183, 50, 39, 0.5));
+	filter: drop-shadow(4px 4px 8px rgba(183, 50, 39, 0.5));
 }
 
 @mixin textStyle($col, $ff, $fs, $fw, $lh, $ls) {

@@ -8,12 +8,13 @@
 	</head>
 	<body>
 		<!-- NAVIGATION -->
-		<nav class="nav">
-			<img
-				src="../images/logo.png"
-				alt="Logo with text saying Bella Olonje"
-				class="nav__logo"
-			/>
+		<nav class="nav" id="home">
+			<a href="#home">
+				<img
+					src="../images/logo.png"
+					alt="Logo with text saying Bella Olonje"
+					class="nav__logo"
+			/></a>
 			<ul class="nav__links">
 				<li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
 				<li class="nav__item">
@@ -28,7 +29,7 @@
 			</ul>
 		</nav>
 		<!-- HEADER -->
-		<header class="header" id="home">
+		<header class="header">
 			<div class="header">
 				<div class="header__content">
 					<h1 class="heading__primary">
@@ -56,9 +57,9 @@
 		</header>
 		<!-- MAIN -->
 		<main>
-			<div class="horizontal-rule"></div>
+			<div class="horizontal-rule" id="how"></div>
 			<!-- SECTION-HOW -->
-			<section class="section-how" id="how">
+			<section class="section-how">
 				<h2 class="heading__secondary--how">How the app works</h2>
 				<div class="how">
 					<div class="how__instruction">
@@ -130,7 +131,44 @@
 					<button class="section-dl__button-2">App store</button>
 				</div>
 			</section>
-			<!--<section class="section__contact" id="contact"></section> -->
 		</main>
+		<!-- FOOTER -->
+		<footer class="footer" id="contact">
+			<div class="footer__container">
+				<a href="#home" class="footer__link">
+					<img
+						src="../images/logo.png"
+						alt="Logo with text saying Bella Olonje"
+						class="footer__logo"
+				/></a>
+				<ul class="footer__socials">
+					<li class="footer__item">
+						<a href="#"
+							><img
+								src="../images/x-logo.svg"
+								alt="X logo also known as twitter"
+								class="footer__link"
+						/></a>
+					</li>
+					<li class="footer__item">
+						<a href="#"
+							><img
+								src="../images/fb-logo.svg"
+								alt="Facebook logo"
+								class="footer__link"
+						/></a>
+					</li>
+					<li class="footer__item">
+						<a href="#"
+							><img
+								src="../images/insta-logo.svg"
+								alt="Instagram logo"
+								class="footer__link"
+						/></a>
+					</li>
+				</ul>
+				<p class="footer__text">Copywright 2020 Bella Onojie.com</p>
+			</div>
+		</footer>
 	</body>
 </html>

@@ -6,6 +6,10 @@
 	justify-content: space-between;
 	padding: 2.6121rem 4rem 2.8121rem 7rem;
 
+	& a {
+		display: block;
+	}
+
 	&__logo {
 		width: 20.6rem;
 		height: 10.1758rem;

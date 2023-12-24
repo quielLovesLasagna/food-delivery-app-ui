@@ -19,7 +19,7 @@
 		justify-content: space-evenly;
 
 		&-preview {
-			@include abs.dropShadowFilter;
+			@include abs.dropShadowFilter-1;
 		}
 
 		&-text-container {

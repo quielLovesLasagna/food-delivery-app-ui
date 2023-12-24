@@ -1,0 +1,51 @@
+@use "../abstracts" as abs;
+
+.footer {
+	height: 22.4rem;
+	display: flex;
+	align-items: center;
+
+	&__logo {
+		width: 24.6rem;
+		height: 10.2rem;
+	}
+
+	&__container {
+		display: block;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 12.2rem;
+	}
+
+	&__socials {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		gap: 2.4rem;
+	}
+
+	&__item {
+		@include abs.transition;
+
+		&:hover {
+			@include abs.dropShadowFilter-2;
+		}
+	}
+
+	&__link {
+		display: block;
+	}
+
+	&__text {
+		@include abs.textStyle(
+			abs.$cl-grey-2,
+			abs.$ff-roboto,
+			abs.$fs-small,
+			abs.$fw-large,
+			1.8rem,
+			0.1px
+		);
+	}
+}
