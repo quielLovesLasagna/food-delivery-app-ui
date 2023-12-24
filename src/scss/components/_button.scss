@@ -1,5 +1,6 @@
 @use "../abstracts" as abs;
 
+// HEADER BUTTONS
 .header {
 	&__buttons {
 		display: flex;
@@ -54,5 +55,61 @@
 		&:hover {
 			@include abs.btnBoxShadow-2;
 		}
+	}
+}
+
+// SECTION-DL BUTTONS
+.section-dl__buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.6rem;
+}
+
+.section-dl__button-1 {
+	cursor: pointer;
+	border: none;
+	width: 14.2rem;
+	padding: 1.8rem 3.1rem;
+	border-radius: 1rem;
+	background-color: abs.$cl-orange;
+
+	@include abs.textStyle(
+		abs.$cl-white-1,
+		abs.$ff-mont,
+		abs.$fs-semi-small,
+		abs.$fw-large,
+		2.8rem,
+		0.2px
+	);
+
+	@include abs.transition;
+
+	&:hover {
+		@include abs.btnBoxShadow-1;
+	}
+}
+
+.section-dl__button-2 {
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid abs.$cl-white-1;
+	width: 17.5rem;
+	padding: 1.6rem 4.5rem;
+	border-radius: 1rem;
+
+	@include abs.textStyle(
+		abs.$cl-white-1,
+		abs.$ff-mont,
+		abs.$fs-semi-small,
+		abs.$fw-large,
+		2.8rem,
+		0.2px
+	);
+
+	@include abs.transition;
+
+	&:hover {
+		@include abs.btnBoxShadow-2;
 	}
 }

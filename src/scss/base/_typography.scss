@@ -93,3 +93,30 @@ body {
 		0.2px
 	);
 }
+
+// FOR SECTION-DOWNLOAD
+.heading__secondary--dl {
+	margin-bottom: 2rem;
+
+	@include abs.textStyle(
+		abs.$cl-white-1,
+		abs.$ff-mont,
+		abs.$fs-large,
+		abs.$fw-large,
+		5.7rem,
+		0.2px
+	);
+}
+
+.paragraph--dl {
+	margin-bottom: 5.4rem;
+
+	@include abs.textStyle(
+		abs.$cl-white-1,
+		abs.$ff-mont,
+		abs.$fs-medium,
+		abs.$fw-medium,
+		5.7rem,
+		0.2px
+	);
+}
