@@ -12,11 +12,28 @@
 .how {
 	text-align: center;
 
+	&__picture {
+		@include abs.respond(59.373em) {
+			width: 26.9rem;
+			height: 52.5rem;
+		}
+	}
+
+	&__picture:not(:last-child) {
+		@include abs.respond(45.625em) {
+			margin-bottom: 2rem;
+		}
+	}
+
 	&__instruction {
 		margin-top: 10rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
+
+		@include abs.respond(45.625em) {
+			flex-direction: column;
+		}
 
 		&-preview {
 			@include abs.dropShadowFilter-1;
@@ -43,4 +60,8 @@
 	background-position-x: 50%;
 	background-attachment: fixed;
 	padding: 10% 0;
+
+	@include abs.respond(59.373em) {
+		height: 45.6rem;
+	}
 }

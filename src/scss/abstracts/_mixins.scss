@@ -30,3 +30,10 @@
 	line-height: $lh;
 	letter-spacing: $ls;
 }
+
+// MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+	@media only screen and (max-width: $breakpoint) {
+		@content;
+	}
+}

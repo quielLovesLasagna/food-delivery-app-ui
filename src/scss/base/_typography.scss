@@ -59,6 +59,10 @@ body {
 		3.6rem,
 		0.1px
 	);
+
+	@include abs.respond(59.373em) {
+		font-size: abs.$mq-fs-semi-large;
+	}
 }
 
 .heading__tertiary--how {
@@ -70,6 +74,10 @@ body {
 		3.6rem,
 		0.1px
 	);
+
+	@include abs.respond(59.373em) {
+		font-size: abs.$mq-fs-medium;
+	}
 }
 
 .heading__quaternary--how {
@@ -81,6 +89,11 @@ body {
 		5.7rem,
 		0.2px
 	);
+
+	@include abs.respond(59.373em) {
+		font-size: abs.$mq-fs-semi-large;
+		line-height: 4.7rem;
+	}
 }
 
 .paragraph--how {
@@ -92,6 +105,10 @@ body {
 		3.8rem,
 		0.2px
 	);
+
+	@include abs.respond(59.373em) {
+		font-size: abs.$mq-fs-medium;
+	}
 }
 
 // FOR SECTION-DOWNLOAD
@@ -106,6 +123,10 @@ body {
 		5.7rem,
 		0.2px
 	);
+
+	@include abs.respond(59.373em) {
+		font-size: abs.$mq-fs-semi-large;
+	}
 }
 
 .paragraph--dl {
@@ -119,4 +140,9 @@ body {
 		5.7rem,
 		0.2px
 	);
+
+	@include abs.respond(59.373em) {
+		font-size: abs.$mq-fs-medium;
+		line-height: 3.7rem;
+	}
 }

@@ -15,5 +15,10 @@
 
 	&__phone {
 		@include abs.dropShadowFilter-1;
+
+		@include abs.respond(59.373em) {
+			width: 60rem;
+			height: 65rem;
+		}
 	}
 }

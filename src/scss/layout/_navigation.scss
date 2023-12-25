@@ -21,6 +21,10 @@
 		align-items: center;
 		gap: 9.4rem;
 		font-size: abs.$fs-semi-small;
+
+		@include abs.respond(59.373em) {
+			gap: 5.4rem;
+		}
 	}
 
 	&__link:link,

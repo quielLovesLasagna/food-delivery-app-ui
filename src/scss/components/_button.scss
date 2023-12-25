@@ -112,4 +112,8 @@
 	&:hover {
 		@include abs.btnBoxShadow-2;
 	}
+
+	@include abs.respond(59.373em) {
+		width: 18.5rem;
+	}
 }
