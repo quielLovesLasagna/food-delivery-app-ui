@@ -1,4 +1,4 @@
-# Natours Project
+# Food App
 
 Food app. Why stay hungry when you can order from Bella Olonje. Download our food app now on. Playstore App store. How the app works. Create an account.
 
