@@ -17,6 +17,10 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 0 12.2rem;
+
+		@include abs.respond(30.0625em) {
+			flex-direction: column;
+		}
 	}
 
 	&__socials {
@@ -24,6 +28,10 @@
 		display: flex;
 		align-items: center;
 		gap: 2.4rem;
+
+		@include abs.respond(30.0625em) {
+			margin-bottom: 2rem;
+		}
 	}
 
 	&__item {

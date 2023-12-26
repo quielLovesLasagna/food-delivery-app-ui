@@ -5,6 +5,7 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 2.6121rem 4rem 2.8121rem 7rem;
+	position: relative;
 
 	@include abs.respond(30.0625em) {
 		height: 7.78rem;
@@ -29,11 +30,33 @@
 		list-style: none;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		gap: 9.4rem;
 		font-size: abs.$fs-semi-small;
 
 		@include abs.respond(59.373em) {
 			gap: 5.4rem;
+		}
+
+		// FOR NAV TOGGLE BUTTON
+		@include abs.respond(45.625em) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background-color: rgba(abs.$cl-white-1, 0.95);
+			z-index: 100;
+			flex-direction: column;
+			font-size: abs.$mq-fs-semi-large;
+			gap: 3.6rem;
+			@include abs.transition;
+
+			// HIDING THE NAVIGATION BY DEFAULT
+			opacity: 0;
+			pointer-events: none;
+			visibility: hidden;
+			transform: translateX(100%);
 		}
 	}
 
@@ -48,5 +71,12 @@
 	&__link:hover,
 	&__link:active {
 		color: abs.$cl-orange;
+	}
+
+	// WHEN VP WIDTH IS  AT 45.625em (< 730PX) SHOW TOGGLE BUTTON
+	&__toggle {
+		@include abs.respond(45.625em) {
+			display: block;
+		}
 	}
 }

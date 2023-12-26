@@ -7,7 +7,15 @@
 			name="description"
 			content="Food app. Why stay hungry when you can order from Bella Olonje. Download our food app now on. Playstore App store. How the app works. Create an account."
 		/>
+		<!-- FONT-AWESOME -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+		<!-- SCSS -->
 		<link rel="stylesheet" href="scss/main.scss" />
+		<!-- SCRIPT -->
+		<script type="module" src="js/script.js"></script>
 		<title>Bella Olonje</title>
 	</head>
 	<body>
@@ -31,6 +39,10 @@
 					<a class="nav__link" href="#contact">Contact</a>
 				</li>
 			</ul>
+			<button class="nav__toggle">
+				<i class="fa-solid fa-bars fa-2xl" name="open-toggle"></i>
+				<i class="fa-solid fa-xmark fa-2xl" name="close-toggle"></i>
+			</button>
 		</nav>
 		<!-- HEADER -->
 		<header class="header">
@@ -171,7 +183,9 @@
 						/></a>
 					</li>
 				</ul>
-				<p class="footer__text">Copywright 2020 Bella Onojie.com</p>
+				<p class="footer__text">
+					Copywright <span class="year">2020</span> Bella Onojie.com
+				</p>
 			</div>
 		</footer>
 	</body>

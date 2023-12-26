@@ -13,10 +13,14 @@ html {
 	scroll-behavior: smooth;
 
 	@include abs.respond(59.373em) {
-		font-size: 50%;
+		font-size: 56.25%;
 	}
 
 	@include abs.respond(45.625em) {
-		font-size: 37.5%;
+		font-size: 50%;
 	}
+}
+
+body {
+	overflow-x: hidden;
 }

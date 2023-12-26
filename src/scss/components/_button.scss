@@ -117,3 +117,45 @@
 		width: 18.5rem;
 	}
 }
+
+// NAV BUTTON (TOGGLE BUTTON)
+.nav {
+	// WHEN VP WIDTH IS AT 45.625em (< 730PX) ADD THE TOGGLE FUNCTIONALITY
+	&__toggle {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: none;
+		border: none;
+		display: none;
+		z-index: 200;
+
+		.fa-solid {
+			color: abs.$cl-grey-1;
+
+			// HIDING THE X-ICON BY DEFAULT
+			&[name="close-toggle"] {
+				display: none;
+			}
+		}
+	}
+
+	// SHOWING THE X-ICON WHEN NAV IS OPENED
+	.nav-open &__toggle {
+		.fa-solid {
+			&[name="close-toggle"] {
+				display: block;
+			}
+		}
+	}
+
+	// HIDING THE MENU-ICON WHEN NAV IS OPENED
+	.nav-open &__toggle {
+		.fa-solid {
+			&[name="open-toggle"] {
+				display: none;
+			}
+		}
+	}
+}
