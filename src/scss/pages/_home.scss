@@ -17,21 +17,28 @@
 			width: 26.9rem;
 			height: 52.5rem;
 		}
-	}
 
-	&__picture:not(:last-child) {
-		@include abs.respond(45.625em) {
-			margin-bottom: 2rem;
+		@include abs.respond(30.0625em) {
+			width: 302px;
+			height: 525px;
 		}
 	}
 
+	// TODO: CHECK THIS OUT AGAIN
 	&__instruction {
 		margin-top: 10rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
 
-		@include abs.respond(45.625em) {
+		&:first-child,
+		&:last-child {
+			@include abs.respond(30.0625em) {
+				flex-direction: column-reverse;
+			}
+		}
+
+		@include abs.respond(30.0625em) {
 			flex-direction: column;
 		}
 
@@ -45,6 +52,10 @@
 			display: flex;
 			flex-direction: column;
 			gap: 1.8rem;
+
+			@include abs.respond(30.0625em) {
+				text-align: center;
+			}
 		}
 	}
 }

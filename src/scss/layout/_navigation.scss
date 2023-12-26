@@ -6,6 +6,11 @@
 	justify-content: space-between;
 	padding: 2.6121rem 4rem 2.8121rem 7rem;
 
+	@include abs.respond(30.0625em) {
+		height: 7.78rem;
+		padding: 1rem;
+	}
+
 	& a {
 		display: block;
 	}
@@ -13,6 +18,11 @@
 	&__logo {
 		width: 20.6rem;
 		height: 10.1758rem;
+
+		@include abs.respond(30.0625em) {
+			width: 10.4rem;
+			height: 5.137rem;
+		}
 	}
 
 	&__links {
