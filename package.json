@@ -2,7 +2,7 @@
 	"name": "food-delivery-app-ui",
 	"version": "1.0.0",
 	"description": "Food delivery app UI",
-	"main": "index.js",
+	"main": "",
 	"scripts": {
 		"start": "parcel src/index.html",
 		"build": "parcel build src/index.html"
