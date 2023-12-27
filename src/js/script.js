@@ -46,7 +46,7 @@ allLinks.forEach((link) =>
 	})
 );
 
-// TODO: emplement sticky navigation
+// For sticky navigation
 const observer = new IntersectionObserver(
 	function (entries) {
 		const ent = entries[0];
