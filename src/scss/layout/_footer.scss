@@ -29,6 +29,10 @@
 		align-items: center;
 		gap: 2.4rem;
 
+		@include abs.respond(45.625em) {
+			margin-right: 2.4rem;
+		}
+
 		@include abs.respond(30.0625em) {
 			margin-bottom: 2rem;
 		}

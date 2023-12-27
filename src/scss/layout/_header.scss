@@ -9,8 +9,18 @@
 	background-position-x: 50%;
 	background-attachment: fixed;
 
+	@include abs.respond(45.625em) {
+		background: abs.$cl-white-4;
+	}
+
 	&__content {
 		padding-top: 7.3rem;
+	}
+
+	&__phones {
+		@include abs.respond(45.625em) {
+			background: abs.$cl-white-4;
+		}
 	}
 
 	&__phone {
@@ -19,6 +29,11 @@
 		@include abs.respond(59.373em) {
 			width: 60rem;
 			height: 65rem;
+		}
+
+		@include abs.respond(45.625em) {
+			width: 43.9rem;
+			height: 57rem;
 		}
 	}
 }

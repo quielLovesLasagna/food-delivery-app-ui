@@ -6,6 +6,11 @@
 	margin: 59rem auto 7.2rem;
 	height: 1px;
 	width: 60vw;
+
+	@include abs.respond(30.0625em) {
+		margin-top: 65rem;
+		border: none;
+	}
 }
 
 // SECTION-HOW
@@ -63,6 +68,10 @@
 
 // SECTION-DOWNLOAD
 .section__download {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	height: 51.6rem;
 	margin-top: 16rem;
 	text-align: center;
@@ -75,5 +84,9 @@
 
 	@include abs.respond(59.373em) {
 		height: 45.6rem;
+	}
+
+	@include abs.respond(45.625em) {
+		background: abs.$cl-very-dark-blue;
 	}
 }

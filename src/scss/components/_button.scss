@@ -7,6 +7,11 @@
 		align-items: center;
 		justify-content: center;
 		gap: 3.4rem;
+
+		@include abs.respond(45.625em) {
+			flex-direction: column;
+			background: abs.$cl-white-4;
+		}
 	}
 
 	&__button-1 {
@@ -49,6 +54,11 @@
 			3.6rem,
 			0.1px
 		);
+
+		@include abs.respond(45.625em) {
+			color: abs.$cl-orange;
+			border-color: abs.$cl-orange;
+		}
 
 		@include abs.transition;
 

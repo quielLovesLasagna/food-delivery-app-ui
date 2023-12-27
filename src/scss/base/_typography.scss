@@ -20,6 +20,10 @@ body {
 			8rem,
 			0.2px
 		);
+
+		@include abs.respond(45.625em) {
+			color: abs.$cl-very-dark-blue;
+		}
 	}
 
 	&__primary--sub {
@@ -32,6 +36,10 @@ body {
 			3.6rem,
 			0.1px
 		);
+
+		@include abs.respond(45.625em) {
+			color: abs.$cl-grey-1;
+		}
 	}
 
 	&__secondary {
@@ -44,6 +52,10 @@ body {
 			3.8rem,
 			0.2px
 		);
+
+		@include abs.respond(45.625em) {
+			color: abs.$cl-grey-1;
+		}
 	}
 }
 
