@@ -37,6 +37,7 @@ Users should be able to:
 
 - HTML5
 - Sass
+- JavaScript
 - Parcel Bundler
 
 ## Author

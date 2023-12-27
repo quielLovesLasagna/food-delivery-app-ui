@@ -5,10 +5,11 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 2.6121rem 4rem 2.8121rem 7rem;
+	background-color: abs.$cl-white-1;
+	height: 11rem;
 	position: relative;
 
 	@include abs.respond(30.0625em) {
-		height: 7.78rem;
 		padding: 1rem;
 	}
 
@@ -78,5 +79,16 @@
 		@include abs.respond(45.625em) {
 			display: block;
 		}
+	}
+}
+
+// FIXING THE JUMP WHEN POSITION STICKY IS ADDED TO THE BODY
+.sticky .nav {
+	@include abs.respond(59.373em) {
+		height: 12.22222222222222rem;
+	}
+
+	@include abs.respond(45.625em) {
+		height: 11rem;
 	}
 }

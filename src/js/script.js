@@ -5,6 +5,7 @@ const navigationEl = document.querySelector(".nav");
 const headerEl = document.querySelector(".header");
 const btnNavToggleEl = document.querySelector(".nav__toggle");
 const yearEl = document.querySelector(".year");
+const allLinks = document.querySelectorAll("a:link");
 
 // FUNCTION/S
 /*
@@ -16,21 +17,53 @@ function getYear() {
 }
 getYear();
 
+// Smooth scrolling
+allLinks.forEach((link) =>
+	link.addEventListener("click", (event) => {
+		event.preventDefault();
+		const href = link.getAttribute("href");
+
+		// Scroll to top
+		if (href === "#" || href === "#home") {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+		}
+
+		// Scrolling to specific parts of the page
+		if (href !== "#" && href.startsWith("#")) {
+			const sectionEl = document.querySelector(href);
+			sectionEl.scrollIntoView({
+				behavior: "smooth",
+			});
+		}
+
+		// Close mobile navigation
+		if (link.classList.contains("nav__link")) {
+			navigationEl.classList.toggle("nav-open");
+		}
+	})
+);
+
 // TODO: emplement sticky navigation
-// const observer = new IntersectionObserver(
-// 	function (entries) {
-// 		const ent = entries[0];
-// 		if (ent.isIntersecting) {
-// 			navigationEl.style.position = "fixed";
-// 		}
-// 	},
-// 	{
-// 		root: null,
-// 		rootMargin: "-80px",
-// 		threshold: 0,
-// 	}
-// );
-// observer.observe(headerEl);
+const observer = new IntersectionObserver(
+	function (entries) {
+		const ent = entries[0];
+		if (!ent.isIntersecting) {
+			document.body.classList.add("sticky");
+		}
+
+		if (ent.isIntersecting) {
+			document.body.classList.remove("sticky");
+		}
+	},
+	{
+		root: null,
+		threshold: 0,
+	}
+);
+observer.observe(headerEl);
 
 // EVENT LISTENER/S
 btnNavToggleEl.addEventListener("click", function () {

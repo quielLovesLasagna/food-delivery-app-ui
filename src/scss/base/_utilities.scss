@@ -1,8 +1,20 @@
-// THIS IS FOR OPENING AND CLOSING THE NAVIGATION WHEN THE USER TOGGLES THE MENU (IN SMALL SCREENS)
+@use "../abstracts" as abs;
 
+// THIS IS FOR OPENING AND CLOSING THE NAVIGATION WHEN THE USER TOGGLES THE MENU (IN SMALL SCREENS)
 .nav-open .nav__links {
 	opacity: 1;
 	pointer-events: auto;
 	visibility: visible;
 	transform: translateX(0);
+}
+
+// FOR STICKY NAVIGATION
+.sticky .nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: rgba(abs.$cl-white-1, 0.95);
+	@include abs.btnBoxShadow-3;
 }

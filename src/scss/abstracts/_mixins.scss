@@ -12,6 +12,10 @@
 	box-shadow: 0 1rem 3rem rgba(var.$cl-white-1, 0.5);
 }
 
+@mixin btnBoxShadow-3 {
+	box-shadow: 0 1rem 3rem rgba(var.$cl-black, 0.2);
+}
+
 @mixin dropShadowFilter-1 {
 	-webkit-filter: drop-shadow(5rem 3rem 15rem rgba(46, 4, 4, 0.21));
 	filter: drop-shadow(5rem 3rem 15rem rgba(46, 4, 4, 0.21));
